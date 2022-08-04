@@ -38,7 +38,7 @@
 	 }
 	 
 	 main {
-	     &.container {
+	     .container {
 	         margin-top: 3rem;
 	         .head {
 	             color: $secondary-color;
@@ -163,4 +163,77 @@
 	         text-decoration: none;
 	     }
 	 }
-	 /* Don’t have an account? Sign up */
+	 
+	 @media only screen and (min-width: 992px) {
+	     header {
+	         display: flex;
+	         flex-direction: row;
+	         align-items: center;
+	         padding: 0px;
+	         gap: 12px;
+	         width: 146px;
+	         height: 32px;
+	         left: 40px;
+	         top: 40px;
+	         .logo {
+	             align-items: center;
+	             display: flex;
+	             justify-content: center;
+	             flex-direction: row;
+	             margin-top: 5rem;
+	             img {
+	                 margin-right: .5rem;
+	             }
+	             span {
+	                 font-size: 1rem;
+	                 font-weight: map-get($map: $font-weight, $key: "Medium");
+	                 padding-top: .5rem;
+	                 line-height: 19px;
+	                 letter-spacing: 0.01em;
+	             }
+	         }
+	     }
+	     main {
+	         .container {
+	             position: absolute;
+	             width: 360px;
+	             height: 517px;
+	             left: 140px;
+	             top: 221px;
+	             .head {
+	                 font-weight: 700;
+	                 font-size: 40px;
+	                 line-height: 48px;
+	                 letter-spacing: 0.01em;
+	                 text-transform: capitalize;
+	                 color: #344054;
+	             }
+	             .sub-head {
+	                 font-weight: 400;
+	                 font-size: 16px;
+	                 line-height: 24px;
+	             }
+	         }
+	         .side {
+	             position: absolute;
+	             width: 48rem;
+	             height: 56rem;
+	             left: 40rem;
+	             top: 2rem;
+	             background: #CBCCE8;
+	             border-radius: 40px;
+	             .container {
+	                 position: absolute;
+	                 width: 736px;
+	                 height: 865px;
+	                 left: 16px;
+	                 top: 0px;
+	                 left: 0%;
+	                 right: 0%;
+	                 top: 0%;
+	                 bottom: 0%;
+	                 background: url("../../img/sprite.svg");
+	             }
+	         }
+	     }
+	 }

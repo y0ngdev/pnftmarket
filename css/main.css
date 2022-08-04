@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 *,
@@ -40,36 +39,36 @@ header .logo span {
   padding-top: 0.5rem;
 }
 
-main.container {
+main .container {
   margin-top: 3rem;
 }
-main.container .head {
+main .container .head {
   color: #344054;
   font-size: 2rem;
   font-weight: 700;
 }
-main.container .sub-head {
+main .container .sub-head {
   color: #667085;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 24px;
 }
-main.container form.form {
+main .container form.form {
   margin-top: 3rem;
 }
-main.container form.form .input-group {
+main .container form.form .input-group {
   margin-bottom: 1rem !important;
   position: relative;
   width: 100%;
   border: none;
 }
-main.container form.form .input-group label {
+main .container form.form .input-group label {
   color: #344054;
   display: block;
   font-size: 0.975rem;
   font-weight: 500;
 }
-main.container form.form .input-group input {
+main .container form.form .input-group input {
   border-radius: 0.5rem;
   border: 1px solid #D0D5DD;
   font-size: 1rem;
@@ -78,42 +77,42 @@ main.container form.form .input-group input {
   padding: 0.8em;
   width: 100%;
 }
-main.container form.form .input-group input::-moz-placeholder {
+main .container form.form .input-group input::-moz-placeholder {
   color: #667085;
   font-weight: 500;
 }
-main.container form.form .input-group input:-ms-input-placeholder {
+main .container form.form .input-group input:-ms-input-placeholder {
   color: #667085;
   font-weight: 500;
 }
-main.container form.form .input-group input::placeholder {
+main .container form.form .input-group input::placeholder {
   color: #667085;
   font-weight: 500;
 }
-main.container form.form .input-group input:focus {
+main .container form.form .input-group input:focus {
   border: 1px solid #D0D5DD;
 }
-main.container form.form .input-group .input-group-icon {
+main .container form.form .input-group .input-group-icon {
   position: absolute;
   top: 70%;
   right: 20px;
   transform: translateY(-50%);
 }
-main.container form.form .input-group .input-group-icon i {
+main .container form.form .input-group .input-group-icon i {
   color: #667085;
   cursor: pointer;
 }
-main.container form.form .option {
+main .container form.form .option {
   display: flex !important;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1rem;
 }
-main.container form.form .option .input-check label {
+main .container form.form .option .input-check label {
   color: #344054;
   font-size: 1rem;
 }
-main.container form.form .forgot-pass {
+main .container form.form .forgot-pass {
   display: inline-block;
   font-size: 1rem;
   color: #5429FF;
@@ -169,4 +168,74 @@ main.container form.form .forgot-pass {
   text-decoration: none;
 }
 
-/* Don’t have an account? Sign up *//*# sourceMappingURL=main.css.map */
+@media only screen and (min-width: 992px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 12px;
+    width: 146px;
+    height: 32px;
+    left: 40px;
+    top: 40px;
+  }
+  header .logo {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 5rem;
+  }
+  header .logo img {
+    margin-right: 0.5rem;
+  }
+  header .logo span {
+    font-size: 1rem;
+    font-weight: 500;
+    padding-top: 0.5rem;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+  }
+  main .container {
+    position: absolute;
+    width: 360px;
+    height: 517px;
+    left: 140px;
+    top: 221px;
+  }
+  main .container .head {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: #344054;
+  }
+  main .container .sub-head {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  main .side {
+    position: absolute;
+    width: 48rem;
+    height: 56rem;
+    left: 40rem;
+    top: 2rem;
+    background: #CBCCE8;
+    border-radius: 40px;
+  }
+  main .side .container {
+    position: absolute;
+    width: 736px;
+    height: 865px;
+    left: 16px;
+    top: 0px;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: url("../../img/sprite.svg");
+  }
+}/*# sourceMappingURL=main.css.map */
